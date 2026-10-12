@@ -88,9 +88,9 @@ Cả hai phiên bản cho cùng kết quả trên các mảng trên.
 
 | n | Θ(n²) | Kadane Θ(n) | Nhận xét |
 |---|---|---|---|
-| 100 | …… ms | …… ms | …… |
-| 1.000 | …… ms | …… ms | …… |
-| 10.000 | …… ms | …… ms | …… |
+| 100 | 0,0204 ms | 0,0009 ms | Cả hai đều rất nhanh, chênh lệch chưa đáng kể trong thực tế. |
+| 1.000 | 1,9322 ms | 0,0082 ms | n tăng 10 lần: Θ(n²) tăng khoảng 95 lần, Kadane tăng khoảng 9 lần. |
+| 10.000 | 199,8180 ms | 0,0859 ms | n tăng 10 lần: Θ(n²) tăng khoảng 103 lần, Kadane tăng khoảng 10 lần; Kadane nhanh hơn hơn 2.000 lần. |
 
 ## Công cụ AI đã sử dụng
 
