@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
@@ -10,10 +10,17 @@ class Program
         Console.OutputEncoding = Encoding.UTF8;
         Console.InputEncoding = Encoding.UTF8;
 
-        string[] s = Console.ReadLine().Split(' ', StringSplitOptions.RemoveEmptyEntries);
-        long a = long.Parse(s[0]);
-        long b = long.Parse(s[1]);
-        long c = long.Parse(s[2]);
+        List<long> so = new List<long>();
+        while (so.Count < 3)
+        {
+            string dong = Console.ReadLine() ?? "";
+            foreach (string t in dong.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+            {
+                if (so.Count < 3)
+                    so.Add(long.Parse(t));
+            }
+        }
+        long a = so[0], b = so[1], c = so[2];
 
         long lonNhat = Math.Max(a, Math.Max(b, c));
         long nhoNhat = Math.Min(a, Math.Min(b, c));
