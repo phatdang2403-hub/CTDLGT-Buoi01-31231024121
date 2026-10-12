@@ -1,8 +1,8 @@
 # CTDLGT - Buổi 01
 
-- **Họ tên:** ……………………………
+- **Họ tên:** Huỳnh Đằng Phát
 - **Mã số sinh viên:** 31231024121
-- **Lớp học phần:** ……………………………
+- **Lớp học phần:** 26C1INF50900706
 
 ## Hướng dẫn biên dịch và chạy chương trình
 
